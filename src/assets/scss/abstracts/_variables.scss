@@ -1,0 +1,49 @@
+:root {
+  --unit: 10px;
+  --family: "Raleway", sans-serif;
+
+  --size-xs: 12px;
+  --size-s: 14px;
+  --size-m: 16px;
+  --size-l: 24px;
+  --size-xl: 32px;
+  --size-2xl: 48px;
+
+  --span-xs: var(--unit);
+  --span-s: calc(var(--unit) * 2);
+  --span-m: calc(var(--unit) * 3);
+  --span-l: calc(var(--unit) * 4);
+  --span-xl: calc(var(--unit) * 5);
+  --span-2xl: calc(var(--unit) * 6);
+
+  //font weights
+  --weight-xsm: 300;
+  --weight-sm: 400;
+  --weight-md: 500;
+  --weight-lg: 600;
+  --weight-xlg: 700;
+  --weight-xxlg: 800;
+  --weight-2xxlg: 900;
+
+  //colors
+  --sidebar-background: #1e213a;
+  --main-view-background: #100e1d;
+  --button-background-grey: #6e707a;
+  --button-text-white: #e7e7eb;
+  --geolocator-background: #ffffff33;
+  --geolocator-color: #e7e7eb;
+  --text-grey: #e7e7eb;
+  --text-grayish-blue: #908fa2;
+  --weather-description-text-grayish-blue: #a09fb1;
+  --weather-date-text: #88869d;
+  --button-farenheit: #585676;
+  --text-blue: #110e3c;
+  --card-background: #1e213a;
+  --card-icon-bg: #ffffff4d;
+  --progress-yellow: #ffec65;
+  --menu-background: #1e213a;
+  --search: #616475;
+  --search-blue: #3c47e9;
+  --border: #616475;
+  --icon: #616475;
+}

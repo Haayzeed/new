@@ -1,0 +1,137 @@
+.weather-info {
+  &__image {
+    display: block;
+    width: 200px;
+    height: 230px;
+    @media (max-width: 1140px) {
+      width: 175px;
+      height: 200px;
+    }
+
+    @media (max-width: 600px) {
+      width: 150px;
+      height: 170px;
+    }
+
+    &-box {
+      display: flex;
+      justify-content: center;
+      padding-bottom: calc(var(--span-2xl) + var(--span-s));
+      // background: url(../assets/images/Cloud-background.png);
+      // background-size: cover;
+      // background-position: center;
+      margin: 0 calc(-1 * var(--span-l) + 5px);
+      @media (max-width: 1140px) {
+        margin: 0 calc(-1 * var(--span-s));
+      }
+      @media (max-width: 600px) {
+        margin: 0;
+        padding-bottom: var(--span-l);
+      }
+    }
+  }
+
+  &__heading {
+    font-family: var(--family);
+    font-style: normal;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: calc(var(--span-2xl) + var(--span-s));
+    @media (max-width: 600px) {
+      padding-bottom: var(--span-s);
+    }
+
+    &--sub {
+      font-size: var(--size-2xl);
+      font-weight: calc(var(--weight-sm) - var(--weight-xsm));
+      line-height: 56px;
+      color: var(--text-grayish-blue);
+      margin-bottom: var(--span-l);
+      @media (max-width: 1200px) {
+        font-size: calc(var(--size-xl) + 4px);
+        line-height: 48px;
+        margin-bottom: var(--span-s);
+      }
+    }
+
+    &--main {
+      font-size: calc(3 * var(--size-2xl));
+      font-weight: var(--weight-md);
+      line-height: 169px;
+      color: var(--text-grey);
+
+      @media (max-width: 1200px) {
+        font-size: calc(2 * var(--size-2xl) + var(--size-m));
+        line-height: 150px;
+      }
+    }
+  }
+
+  &__description {
+    font-family: var(--family);
+    font-size: calc(var(--size-xl) + 4px);
+    font-style: normal;
+    font-weight: var(--weight-lg);
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--weather-description-text-grayish-blue);
+    padding-bottom: calc(var(--span-2xl) + var(--span-s));
+    @media (max-width: 600px) {
+      padding-bottom: var(--span-l);
+    }
+  }
+
+  &__date {
+    display: flex;
+    justify-content: center;
+    font-family: var(--family);
+    font-size: calc(var(--size-m) + 2px);
+    font-style: normal;
+    font-weight: var(--weight-md);
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--weather-date-text);
+    padding-bottom: var(--span-m);
+
+    span {
+      &:not(:last-child) {
+        margin-right: calc(var(--span-xs) + 5px);
+      }
+    }
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: var(--span-xl);
+    @media (max-width: 600px) {
+      padding-bottom: calc(var(--span-2xl) + var(--span-s));
+    }
+    &-icon {
+      height: 20px;
+      width: 16px;
+      margin-right: var(--span-xs);
+
+      svg {
+        fill: var(--weather-date-text);
+      }
+    }
+
+    &-text {
+      font-family: var(--family);
+      font-size: calc(var(--size-m) + 2px);
+      font-style: normal;
+      font-weight: var(--weight-lg);
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: var(--weather-date-text);
+    }
+  }
+}

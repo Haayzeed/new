@@ -1,0 +1,58 @@
+.sidebar {
+  position: relative;
+  background: var(--sidebar-background);
+  padding: 0 calc(var(--span-l) + 5px);
+  padding-top: var(--span-l);
+  overflow: hidden;
+  max-height: 100%;
+
+  @media (max-width: 1140px) {
+    padding: 0 var(--span-s);
+    padding-top: var(--span-l);
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 15px;
+    padding-top: 20px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--span-s);
+  }
+
+  &__geolocator {
+    cursor: pointer;
+    &-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--geolocator-background);
+      border-radius: 50%;
+      box-shadow: 0px 4px 4px #00000040;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: var(--geolocator-color);
+      }
+    }
+  }
+
+  &__main {
+    padding-top: calc(var(--span-2xl) + var(--span-s));
+    position: relative;
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    transform: scale(1.8);
+    left: 0;
+    opacity: 0.1;
+  }
+}

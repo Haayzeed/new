@@ -1,0 +1,54 @@
+.progress {
+  padding: 0 var(--span-m);
+
+  &__bars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -10px;
+  }
+
+  &__bar,
+  &__value {
+    font-family: var(--family);
+    font-size: var(--size-xs);
+    font-style: normal;
+    font-weight: var(--weight-xlg);
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--weather-description-text-grayish-blue);
+  }
+
+  &__unit {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__input {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 8px;
+
+    &::-webkit-progress-bar {
+      background: var(--text-grey);
+      border-radius: 15px;
+      height: 8px;
+    }
+
+    &::-webkit-progress-value {
+      background: var(--progress-yellow);
+      border-radius: 15px;
+      width: 80%;
+      height: 8px;
+    }
+
+    &::-moz-progress-bar {
+      border: 1px solid var(--text-grey);
+      background: var(--text-grey);
+      height: 8px;
+    }
+  }
+}
