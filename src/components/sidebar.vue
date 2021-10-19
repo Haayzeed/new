@@ -158,7 +158,7 @@ export default {
     },
 
     created() {
-        axios.get('http://localhost:8080/api/location/search/?query=london').then(response => {
+        axios.get('https://www.metaweather.com/api/location/search/?query=london').then(response => {
             console.log(response.data[0].woeid)
         })
     }
